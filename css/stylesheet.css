@@ -42,6 +42,7 @@ canvas{
 
 .title-wrapper > h1{
     font-size: 35px;
+    text-align: center;
     color: var(--main-font-color);
     font-weight: 450;
     letter-spacing: .8px;
@@ -164,3 +165,56 @@ input[type=submit]{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .title-wrapper > h1{
+        font-size: 25px;
+    }
+
+    .title-wrapper > h3{
+        font-size: 14px;
+    }
+    
+    h4{
+        width: 100%;
+    }
+    
+    .container{
+        width: 95%;
+    }
+    canvas{
+        display: none;
+    }
+
+    form{
+        width: 80%;
+    }
+
+
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .container{
+        width: 80%;
+    }
+    canvas{
+        display: block;
+    }
+
+    form{
+        width: 30%;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
