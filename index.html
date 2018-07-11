@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/stylesheet.css">
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -44,10 +45,38 @@
                     <h4>Already have a mystore?<a href="#"> Log in <a/></h4>
                 </form>
 
+                <div id="like-button-container"></div>
                 
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+        <script type="text/babel">
 
-        <script src="js/script.js" async defer></script>
+            class Greetings extends React.Component{
+                constructor(props) {
+                    super(props);
+                }
+                render(){
+                    return(
+                        <h1>Yoo {this.props.name}</h1>
+                    );
+                }
+            }
+            
+            Greetings.propTypes = {
+                name: React.PropTypes.string
+            }
+
+            Greetings.defaultProps = {
+                name: "Scott"
+            }
+
+            ReactDOM.render(
+                <Greetings name="Williamos"/>,
+                document.getElementById('like-button-container')
+            );
+        </script>
     </body>
 </html>

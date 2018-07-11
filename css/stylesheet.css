@@ -2,6 +2,7 @@
 
 :root{
     --primary-color: #41D91D;
+    --primary-color-dark: #35a81a;
     --main-font-color: #3F444E;
     --secondary-font-color: #8997AA;
     --detail-color: #B5B5B5;
@@ -102,6 +103,7 @@ input[type=submit]{
     display: block;
     width: 80%;
     height: 40px;
+    border: 0;
     border-radius: 50px;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -112,6 +114,10 @@ input[type=submit]{
 
     font-size: 14px;
     letter-spacing: .5px;
+}
+
+input[type=submit]:active{
+    background-color: var(--primary-color-dark);
 }
 
 ::placeholder{
@@ -169,7 +175,7 @@ input[type=submit]{
 }
 
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (min-width: 300px) {
    .title-wrapper{
        width: 100%;
    }

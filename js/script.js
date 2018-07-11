@@ -4,8 +4,7 @@ function draw(){
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
-    console.log("This is a test");
+    
     if(canvas.getContext){
         var ctx = canvas.getContext('2d');
         
