@@ -36,8 +36,9 @@ canvas{
 }
 
 .title-wrapper{
-    width: 100%;
-    margin-top: 10%;
+    max-width: 600px;
+    margin: 2% auto 0 auto;
+    text-align: center;
 }
 
 .title-wrapper > h1{
@@ -61,7 +62,8 @@ canvas{
 
 form{
     width: 50%;
-    margin: 5% auto;
+    max-width: 350px;
+    margin: 2% auto;
 }
 
 form > div{
@@ -168,6 +170,10 @@ input[type=submit]{
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+   .title-wrapper{
+       width: 100%;
+   }
+   
     .title-wrapper > h1{
         font-size: 25px;
     }
@@ -181,7 +187,7 @@ input[type=submit]{
     }
     
     .container{
-        width: 95%;
+        width: 80%;
     }
     canvas{
         display: none;
@@ -190,31 +196,22 @@ input[type=submit]{
     form{
         width: 80%;
     }
-
-
 }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+/* @media (min-width: 550px) {
 
-}
+} */
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-    .container{
-        width: 80%;
-    }
     canvas{
         display: block;
-    }
-
-    form{
-        width: 30%;
     }
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+/* @media (min-width: 1000px) {} */
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+/* @media (min-width: 1200px) {} */
